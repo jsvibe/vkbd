@@ -42,7 +42,7 @@ Below are some of the most common ways to include vkbd.
 **CDN Link**
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/printfy@1.0.0/lib/vkbd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vkbd@1.0.0/lib/vkbd.min.js"></script>
 ```
 
 You can add the script manually to your project:
@@ -54,7 +54,7 @@ You can add the script manually to your project:
 Webpack / Browserify / Babel
 ----------------------------
 
-There are several ways to use [Webpack](https://webpack.js.org/), [Browserify](http://browserify.org/) or [Babel](https://babeljs.io/). For more information on using these tools, please refer to the corresponding project's documentation. In the script, including printfy will usually look like this:
+There are several ways to use [Webpack](https://webpack.js.org/), [Browserify](http://browserify.org/) or [Babel](https://babeljs.io/). For more information on using these tools, please refer to the corresponding project's documentation. In the script, including vkbd will usually look like this:
 
 ```js
 import vkbd from 'vkbd';
@@ -99,6 +99,8 @@ function App() {
 export default App;
 ```
 
+### Output
+
 ![Output1](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/hr2aw0d4n9ex14nh85k2.gif)
 
 ### Usage in Browser
@@ -110,8 +112,8 @@ export default App;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Virtual Keyboard UI</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/printfy@1.0.0/lib/vkbd.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/printfy@1.0.0/lib/vkbd.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vkbd@1.0.0/lib/vkbd.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vkbd@1.0.0/lib/vkbd.min.js"></script>
 
   <!-- Keboard UI Configuration -->
   <script>
@@ -141,6 +143,8 @@ export default App;
 </body>
 </html>
 ```
+
+### Output
 
 ![Output2](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ug19xle84vdeuw0jke8g.gif)
 
