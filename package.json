@@ -1,0 +1,56 @@
+{
+  "name": "vkbd",
+  "version": "1.0.0",
+  "description": "A lightweight Hindi/English virtual keyboard UI for web applications.",
+  "main": "./lib/vkbd.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "exports": {
+    "./vkbd.css": "./lib/vkbd.css"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo 'No build step required'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jsvibe/fsmate.git"
+  },
+  "keywords": [
+    "virtual-keyboard",
+    "hindi-keyboard",
+    "hindi-input",
+    "keyboard-ui",
+    "on-screen-keyboard",
+    "react-component",
+    "vkbd",
+    "component",
+    "ime",
+    "react",
+    "input-method",
+    "hindi-typing",
+    "multilingual-keyboard",
+    "custom-keyboard",
+    "javascript-keyboard",
+    "browser-keyboard",
+    "text-input",
+    "web-keyboard"
+  ],
+  "author": "Indian Modassir",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jsvibe/fsmate/issues"
+  },
+  "homepage": "https://github.com/indianmodassir",
+  "funding": [
+    {
+      "type": "patreon",
+      "url": "https://patreon.com/indianmodassir"
+    },
+    {
+      "type": "buymeacoffee",
+      "url": "https://buymeacoffee.com/indianmodassir"
+    }
+  ]
+}

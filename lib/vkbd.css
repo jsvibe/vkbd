@@ -1,0 +1,230 @@
+/* Dark Mode */
+dialog#vkbd[data-theme=dark] {
+  --variant1: #2c2b2b;
+  --variant2: #24244f;
+  --variant3: #5d3e3e;
+}
+dialog#vkbd[data-theme=dark]:has(#variant1:checked) {
+  --vkbd-special-key-background: #2c2b2b !important;
+  --vkbd-special-key-color: #ffffff !important;
+  --vkbd-key-background: #2c2b2b !important;
+  --vkbd-key-color: #ffffff !important;
+  --vkbd-special-key-hover-background: #333 !important;
+  --vkbd-special-key-hover-color: #333 !important;
+  --vkbd-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.534) !important;
+  --vkbd-key-shadow: 0px 2px 5px rgba(0, 0, 0, 0.671) !important;
+  --vkbd-background: #292222 !important;
+}
+dialog#vkbd[data-theme=dark]:has(#variant2:checked) {
+  --vkbd-special-key-background: #24244f !important;
+  --vkbd-special-key-color: #ffffff !important;
+  --vkbd-key-background: #2c2b2b !important;
+  --vkbd-key-color: #ffffff !important;
+  --vkbd-special-key-hover-background: #333 !important;
+  --vkbd-special-key-hover-color: #333 !important;
+  --vkbd-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.534) !important;
+  --vkbd-key-shadow: 0px 2px 5px rgba(0, 0, 0, 0.671) !important;
+  --vkbd-background: #121822 !important;
+}
+dialog#vkbd[data-theme=dark]:has(#variant3:checked) {
+  --vkbd-special-key-background: #5d3e3e !important;
+  --vkbd-special-key-color: #ffffff !important;
+  --vkbd-key-background: #453a3a !important;
+  --vkbd-key-color: #ffffff !important;
+  --vkbd-special-key-hover-background: #333 !important;
+  --vkbd-special-key-hover-color: #333 !important;
+  --vkbd-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.534) !important;
+  --vkbd-key-shadow: 0px 2px 5px rgba(0, 0, 0, 0.671) !important;
+  --vkbd-background: #353333 !important;
+}
+
+/* Light Mode */
+dialog#vkbd[data-theme=light] {
+  --variant1: #f0f0f0;
+  --variant2: #8b8888;
+  --variant3: #4e5255;
+}
+dialog#vkbd[data-theme=light]:has(#variant1:checked) {
+  --vkbd-special-key-background: #f0f0f0 !important;
+  --vkbd-key-background: #f0f0f0 !important;
+  --vkbd-special-key-color: #1a1919 !important;
+  --vkbd-key-color: #1a1919 !important;
+  --vkbd-special-key-hover-background: #333 !important;
+  --vkbd-special-key-hover-color: #333 !important;
+  --vkbd-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.534) !important;
+  --vkbd-key-shadow: 0px 2px 5px rgba(0, 0, 0, 0.671) !important;
+  --vkbd-background: #ffffff !important;
+}
+dialog#vkbd[data-theme=light]:has(#variant2:checked) {
+  --vkbd-special-key-background: #8b8888 !important;
+  --vkbd-key-background: #ffffff !important;
+  --vkbd-special-key-color: #f8f5f5 !important;
+  --vkbd-key-color: #1a1919 !important;
+  --vkbd-special-key-hover-background: #333 !important;
+  --vkbd-special-key-hover-color: #333 !important;
+  --vkbd-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.534) !important;
+  --vkbd-key-shadow: 0px 2px 5px rgba(0, 0, 0, 0.52) !important;
+  --vkbd-background: #ffffff !important;
+}
+dialog#vkbd[data-theme=light]:has(#variant3:checked) {
+  --vkbd-special-key-background: #4e5255 !important;
+  --vkbd-key-background: #ffffff !important;
+  --vkbd-special-key-color: #f8f5f5 !important;
+  --vkbd-key-color: #1a1919 !important;
+  --vkbd-special-key-hover-background: #333 !important;
+  --vkbd-special-key-hover-color: #333 !important;
+  --vkbd-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.534) !important;
+  --vkbd-key-shadow: 0px 2px 5px rgba(0, 0, 0, 0.52) !important;
+  --vkbd-background: #ffffff !important;
+}
+
+div.vkbd-outer-cover {
+  position: fixed !important;
+  right: 0 !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  overflow: hidden !important;
+  background: none !important;
+  pointer-events: none !important;
+}
+dialog#vkbd {
+  user-select: none !important;
+  outline: none !important;
+  max-width: 560px !important;
+  width: 100% !important;
+  overflow: hidden !important;
+  pointer-events: all !important;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 !important;
+  border: none !important;
+  font-size: 18px !important;
+  border-radius: 8px !important;
+  box-shadow: var(--vkbd-box-shadow);
+  background: var(--vkbd-background);
+  -webkit-tap-highlight-color: transparent !important;
+  font-family: "Helvetica Neue Light", "HelveticaNeue-Light", "Helvetica Neue", Calibri, Helvetica, Arial, sans-serif !important;
+}
+.wrapper, .keyboard-layouts {
+  display: flex !important;
+  flex-direction: column !important;
+}
+dialog#vkbd .top-bar {
+  cursor: move !important;
+  padding: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+dialog#vkbd .themes {
+  display: flex !important;
+  align-items: center !important;
+  column-gap: 6px !important;
+}
+dialog#vkbd .themes label {
+  cursor: pointer !important;
+  width: 17px !important;
+  height: 17px !important;
+  position: relative !important;
+  border-radius: 50% !important;
+  border: 1px solid #3b82f6 !important;
+  box-shadow: 3px 4px 13px -1px rgba(0, 0, 0, 0.37) !important;
+  box-sizing: border-box !important;
+}
+dialog#vkbd .themes label:has(input:checked):after {
+  content: "";
+  position: absolute !important;
+  width: 17px !important;
+  height: 17px !important;
+  top: 50% !important;
+  left: 50% !important;
+  border-radius: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  border: 3px solid #3b82f6 !important;
+  box-sizing: border-box !important;
+}
+dialog#vkbd .themes label:active {
+  transform: scale(.98) !important;
+}
+dialog#vkbd .themes label[for=variant1] {
+  background: var(--variant1) !important;
+}
+dialog#vkbd .themes label[for=variant2] {
+  background: var(--variant2) !important;
+}
+dialog#vkbd .themes label[for=variant3] {
+  background: var(--variant3) !important;
+}
+.close {
+  cursor: pointer !important;
+  padding: 2px !important;
+  border-radius: 50% !important;
+  color: var(--vkbd-special-key-color) !important;
+  background: var(--vkbd-special-key-background) !important;
+}
+.close:hover {
+  opacity: 0.8 !important;
+}
+dialog#vkbd .top-bar svg {
+  display: block !important;
+  stroke: currentColor !important;
+  stroke-width: 2px !important;
+  width: 16px !important;
+  height: 16px !important;
+  fill: none !important;
+  stroke-linejoin: round !important;
+  stroke-linecap: round !important;
+}
+.keyboard-layouts {
+  padding: 6px !important;
+  flex: 1 !important;
+  row-gap: 4px !important;
+}
+.keyboard-layouts .keyboard-row {
+  display: flex !important;
+  flex: 1 !important;
+  column-gap: 4px !important;
+}
+.keyboard-layouts .keyboard-row button {
+  position: relative !important;
+  outline: none !important;
+  border: none !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  min-width: max-content !important;
+  width: 33px !important;
+  height: 35px !important;
+  border-radius: 5px !important;
+  flex-shrink: 0 !important;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Noto Sans, 'Helvetica Neue', Arial, 'Noto Sans Devanagari', 'Mangal', 'Kohinoor Devanagari', sans-serif !important;
+  color: var(--vkbd-key-color);
+  background: var(--vkbd-key-background);
+  box-shadow: var(--vkbd-key-shadow);
+}
+.keyboard-layouts .keyboard-row button.special-key {
+  color: var(--vkbd-special-key-color);
+  background: var(--vkbd-special-key-background);
+}
+.fg-1 {
+  flex-grow: 1 !important;
+}
+.keyboard-layouts .keyboard-row button.locked,
+.keyboard-layouts .keyboard-row button:active,
+.keyboard-layouts .keyboard-row button.active {
+  color: #ffffff !important;
+  background: #3b82f6 !important;
+  transform: scale(0.98) !important;
+}
+@media only screen and (max-width: 560px) {
+  .keyboard-layouts .keyboard-row button {
+    min-width: max-content !important;
+    width: 25px !important;
+    height: 25px !important;
+  }
+  dialog#vkbd {
+    min-width: 444px !important;
+    max-width: 560px !important;
+  }
+}
