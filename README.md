@@ -42,7 +42,7 @@ Below are some of the most common ways to include vkbd.
 **CDN Link**
 
 ```html
-<script src="https://cdn.jsdelivr.net/npm/vkbd@1.0.0/lib/vkbd.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vkbd@1.0.1/lib/vkbd.min.js"></script>
 ```
 
 You can add the script manually to your project:
@@ -112,8 +112,8 @@ export default App;
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Virtual Keyboard UI</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vkbd@1.0.0/lib/vkbd.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/vkbd@1.0.0/lib/vkbd.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vkbd@1.0.1/lib/vkbd.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/vkbd@1.0.1/lib/vkbd.min.js"></script>
 
   <!-- Keboard UI Configuration -->
   <script>
